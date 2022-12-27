@@ -1,0 +1,166 @@
+@media screen and(min-width: 760px) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: 100% 10%;
+
+        .container {
+            // background-color: gray;
+            @include flex(column, center, center, 5rem);
+            width: clamp(750px, 90vw, 1200px);
+            margin: 2.5rem 0;
+
+            .header {
+                width: 60%;
+                gap: 1.8rem;
+
+                .header-title {
+                    h1 {
+                        margin-bottom: .6rem;
+                    }
+                }
+
+                img {
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+
+
+            .download-buttons {
+                @include flex(row, center, center, 1rem);
+                width: 20rem;
+
+                .button {
+                    height: 2.5rem;
+                    font-size: .8rem;
+                }
+            }
+
+            .snippets {
+                gap: 1.8rem;
+
+                .snippets-title {
+                    width: 60%;
+
+                    h2 {
+                        margin-bottom: .6rem;
+                    }
+                }
+
+                .snippets-description {
+                    display: flex;
+                    gap: 4rem;
+
+                    .snippets-text {
+                        gap: 3rem;
+
+                        .cards {
+                            text-align: left;
+                            width: 80%;
+
+                            h3 {
+                                margin-bottom: .6rem;
+                            }
+                        }
+                    }
+
+                    .img-computer {
+                        width: 50%;
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+
+            .clipboard {
+                gap: 2rem;
+
+                .clipboard-title {
+                    width: 60%;
+
+                    h2 {
+                        margin-bottom: .6rem;
+                    }
+                }
+
+                .img-devices {
+                    width: 85%;
+                }
+            }
+
+            .workflow {
+                gap: 5rem;
+
+                .workflow-title {
+                    h2 {
+                        margin-bottom: .6rem;
+                    }
+                }
+
+                .workflow-cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 4rem;
+
+                    .card {
+                        gap: 1rem;
+                    }
+                }
+            }
+
+            .companies {
+                width: 100%;
+                @include flex(row, space-between, center, 0);
+            }
+
+            .clipboard-download {
+                margin: 5rem 0;
+                width: 60%;
+                gap: 1.8rem;
+
+                .title {
+                    h2 {
+                        margin-bottom: .6rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        width: 100%;
+        padding: 1.5rem;
+        @include flex(row, space-between, center, 0);
+        background-color: $Grayish-Blue;
+
+        .page-info {
+            margin-top: 0;
+            @include flex(row, center, center, 2rem);
+
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            .contact {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $Dark-Grayish-Blue;
+                    }
+                }
+            }
+        }
+
+        .social-icons {
+            @include flex(row, center, center, 2rem);
+            margin-bottom: 0;
+        }
+    }
+}

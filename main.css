@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: url(images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  width: clamp(370px, 80vw, 750px);
+  margin: 5rem 0;
+  text-align: center;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .header .header-title h1 {
+  margin-bottom: 1rem;
+}
+.container .snippets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .snippets .snippets-title h2 {
+  margin-bottom: 1rem;
+}
+.container .snippets .snippets-description .snippets-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .snippets .snippets-description .snippets-text .cards h3 {
+  margin-bottom: 1rem;
+}
+.container .snippets .snippets-description .img-computer {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.container .clipboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .clipboard .clipboard-title h2 {
+  margin-bottom: 1rem;
+}
+.container .clipboard .img-devices {
+  width: 100%;
+}
+.container .workflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.container .workflow .workflow-title h2 {
+  margin-bottom: 1rem;
+}
+.container .workflow .workflow-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .workflow .workflow-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.container .companies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.container .clipboard-download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.container .clipboard-download .title h2 {
+  margin-bottom: 1rem;
+}
+.container h1 {
+  font-size: 2rem;
+}
+.container h1,
+.container h2,
+.container h3 {
+  color: hsl(210deg, 10%, 33%);
+}
+.container p {
+  color: hsl(201deg, 11%, 66%);
+}
+.container .download-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.container .download-buttons .button {
+  width: clamp(15rem, 80%, 20rem);
+  height: 3rem;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 2px -1px 11px 0px rgba(46, 46, 46, 0.75) inset;
+  -webkit-box-shadow: 2px -1px 11px 0px rgba(46, 46, 46, 0.75) inset;
+  -moz-box-shadow: 2px -1px 11px 0px rgba(46, 46, 46, 0.75) inset;
+}
+.container .download-buttons .button:hover {
+  cursor: pointer;
+  filter: brightness(1.3);
+}
+.container .download-buttons .mac {
+  background-color: hsl(233deg, 100%, 69%);
+}
+.container .download-buttons .ios {
+  background-color: hsl(171deg, 66%, 44%);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background-color: hsl(201deg, 11%, 66%);
+}
+.footer .page-info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer .page-info img {
+  width: 4rem;
+  height: 4rem;
+}
+.footer .page-info .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer .page-info .contact li {
+  list-style-type: none;
+}
+.footer .page-info .contact li a {
+  text-decoration: none;
+  color: hsl(210deg, 10%, 33%);
+}
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 760px) {
+  body {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 10%;
+  }
+  body .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: clamp(750px, 90vw, 1200px);
+    margin: 2.5rem 0;
+  }
+  body .container .header {
+    width: 60%;
+    gap: 1.8rem;
+  }
+  body .container .header .header-title h1 {
+    margin-bottom: 0.6rem;
+  }
+  body .container .header img {
+    width: 5rem;
+    height: 5rem;
+  }
+  body .container .download-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+  }
+  body .container .download-buttons .button {
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  body .container .snippets {
+    gap: 1.8rem;
+  }
+  body .container .snippets .snippets-title {
+    width: 60%;
+  }
+  body .container .snippets .snippets-title h2 {
+    margin-bottom: 0.6rem;
+  }
+  body .container .snippets .snippets-description {
+    display: flex;
+    gap: 4rem;
+  }
+  body .container .snippets .snippets-description .snippets-text {
+    gap: 3rem;
+  }
+  body .container .snippets .snippets-description .snippets-text .cards {
+    text-align: left;
+    width: 80%;
+  }
+  body .container .snippets .snippets-description .snippets-text .cards h3 {
+    margin-bottom: 0.6rem;
+  }
+  body .container .snippets .snippets-description .img-computer {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+  body .container .clipboard {
+    gap: 2rem;
+  }
+  body .container .clipboard .clipboard-title {
+    width: 60%;
+  }
+  body .container .clipboard .clipboard-title h2 {
+    margin-bottom: 0.6rem;
+  }
+  body .container .clipboard .img-devices {
+    width: 85%;
+  }
+  body .container .workflow {
+    gap: 5rem;
+  }
+  body .container .workflow .workflow-title h2 {
+    margin-bottom: 0.6rem;
+  }
+  body .container .workflow .workflow-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+  body .container .workflow .workflow-cards .card {
+    gap: 1rem;
+  }
+  body .container .companies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  body .container .clipboard-download {
+    margin: 5rem 0;
+    width: 60%;
+    gap: 1.8rem;
+  }
+  body .container .clipboard-download .title h2 {
+    margin-bottom: 0.6rem;
+  }
+  .footer {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    background-color: hsl(201deg, 11%, 66%);
+  }
+  .footer .page-info {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer .page-info img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .footer .page-info .contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .page-info .contact li {
+    list-style-type: none;
+  }
+  .footer .page-info .contact li a {
+    text-decoration: none;
+    color: hsl(210deg, 10%, 33%);
+  }
+  .footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
